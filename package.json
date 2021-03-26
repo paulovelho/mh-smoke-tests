@@ -1,0 +1,18 @@
+{
+  "name": "mh-smoke-tests",
+  "version": "1.0.0",
+  "description": "smoke tests for MH",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NIGHTWATCH_VERSION=1.1.13 nightwatch"
+  },
+  "author": "Vokal",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^74.0.0",
+    "cross-env": "^5.2.0",
+    "geckodriver": "1.16.2",
+    "nightwatch": "^1.1.13",
+    "nightwatch-xhr": "^0.4.7"
+  }
+}

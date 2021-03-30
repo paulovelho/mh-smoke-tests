@@ -5,8 +5,8 @@ function goToUserModal(client) {
 	return globals
 		.login(client)
 		.waitForElementVisible(".page-grid__nav", 5000)
-		.click('[href="/people"]')
-		.waitForElementVisible(".MuiButtonBase-root", 5000)
+		.click('.MuiDrawer-docked [href="/people"]')
+		.waitForElementVisible(".page-grid__main", 5000)
 		.click('.MuiSpeedDialIcon-root')
 		.click("#Createnewcompanyoruser-actions button");
 }
@@ -38,7 +38,6 @@ module.exports = {
 					'Success creating Test Buster.'
 				);
 
-		})
-		.pause(30*60*1000);
+		});
 	}
 };

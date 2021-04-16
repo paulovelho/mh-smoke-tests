@@ -12,6 +12,7 @@ using [nightwatch.js](https://nightwatchjs.org/) as library for smoke tests impl
 - update `aws-exports.js`, using `aws-exports.sample.js` as base
 	- information can be extracted from project's `aws-exports`
 
+
 ### run:
 - `npm test`
 - you can run a single test using the `--test` parameter

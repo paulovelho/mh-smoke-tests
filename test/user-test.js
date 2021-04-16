@@ -18,10 +18,11 @@ const successResponseElement = 'div[role="presentation"] p.MuiTypography-body1.M
 module.exports = {
 
 	'new-user': (client) => {
+
 		const firstName = "Test";
 		const lastName = "Buster";
 		const role = "GLOBALPARTNER";
-		console.info('setting ', email);
+
 		goToUserModal(client)
 		.setValue('#fname-input', firstName)
 		.setValue('#lname-input', lastName)

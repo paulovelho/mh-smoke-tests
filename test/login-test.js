@@ -8,6 +8,7 @@ module.exports = {
 			.url(config.url + '/login')
 			.useCss()
 			.waitForElementVisible(submitBt, 5000)
+// the next line will wait for env's name to show up. it can be removed on production
 			.waitForElementVisible(".MuiTypography-colorTextSecondary", 5000)
 			.assert.visible("#username-input")
 			.setValue('#username-input', config.loginEmail)
